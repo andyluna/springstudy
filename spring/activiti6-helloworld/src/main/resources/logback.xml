@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="false" scanPeriod="60 seconds" debug="false">
+
+
+    <timestamp key="DATETIME" datePattern="yyyy-MM-dd HH:mm:ss.SSS" />
+
+    <!-- 控制台输出 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{${DATETIME}} [%-4.5thread] %-40.40logger{40} %5level: %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <logger name="root">
+        <level value="ERROR" />
+    </logger>
+    <logger name="com.andy">
+        <level value="DEBUG" />
+    </logger>
+
+    <root>
+        <appender-ref  ref="STDOUT"/>
+    </root>
+
+
+
+    　　
+</configuration>

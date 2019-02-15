@@ -27,6 +27,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>4.4.2</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

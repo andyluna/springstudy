@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" >
+<head>
+
+</head>
+
+<body >
+<h1>springboot用thymeleaf模板发送邮件</h1>
+<h2>当前时间1：<span th:text="${#dates.format(date, 'yyyy-MM-dd HH:mm:ss')}"></span></h2>
+<h2>当前时间2：<span th:text="${curDate}"></span></h2>
+<p>系统参数信息：<pre th:text="${systemInfo}"></pre></p>
+<h2><a th:href="@{http://www.andy-luna.top/?id={id}(id=${id})}">这是一个链接</a></h2>
+</body>
+
+</html>

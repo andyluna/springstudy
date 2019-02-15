@@ -12,6 +12,12 @@
     <groupId>com.andy.maven</groupId>
     <artifactId>spring</artifactId>
     <packaging>pom</packaging>
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
     <modules>
         <module>htutil</module>
         <module>activiti6-helloworld</module>

@@ -1,0 +1,10 @@
+spring:
+    mail:
+        protocol: smtp
+        host: smtp.163.com
+        default-encoding: UTF-8
+        username: xiangdan311@163.com
+        password: Xiangdan311
+        properties:
+            prop1: 1
+            prop2: 2
